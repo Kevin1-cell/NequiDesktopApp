@@ -1,0 +1,168 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #fce7f6;
+    overflow: hidden;
+  }
+  
+
+  header {
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffffff;
+  }
+  
+  .logo {
+    width: 200px;
+    position: relative;
+  }
+
+  h2 {
+    font-size: 32px;
+    color: #1c0c28;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  
+  p {
+    color: #5a5a5a;
+    font-size: 16px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+  }
+  
+  /* Estilo de la tarjeta */
+  .card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 55vh;
+    height: 71vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 9rem;
+    margin-left: 32.5rem;
+  }
+  
+  /* Inputs de código */
+  .code-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    gap: 15px;
+    margin-top: 25px;
+  }
+  
+  .code-input input {
+    width: 70px;
+    height: 64px;
+    text-align: center;
+    font-size: 45px;
+    border: 1px solid #fce7f6;
+    border-radius: 15px;
+    background-color: #fce7f6;
+  }
+  
+  .code-input input:focus {
+    border: 2px solid #ff0099;
+  }
+  
+  /* Mensaje adicional */
+  .info {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .info button.link {
+    background: none;
+    border: none;
+    color: #ff0099;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .info button.link:hover {
+    color: #e6006a;
+  }
+  
+  /* Input de correo */
+  #email-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  #email-input.hidden {
+    display: none;
+  }
+  
+  #email-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  #email-input button {
+    background-color: #ff0099;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #email-input button:hover {
+    background-color: #e6006a;
+  }
+  
+  /* Teclado numérico */
+  .numeric-keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    position: relative;
+  }
+  
+  .numeric-keypad .key {
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-style: none;
+    font-size: 30px;
+    font-size: 1.7rem;
+  }
+  
+  .numeric-keypad .key.delete {
+    background-color: transparent;
+    color: #ff007a;
+  }
+  
+  /* Botón de Aceptar */
+  #verify-code {
+    background-color: #ff0099;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 48vh;
+  margin-left: 4vh;
+  margin-top: 2vh;
+  }
+  
+  #verify-code:hover {
+    background-color: #e6006a;
+  }
+  

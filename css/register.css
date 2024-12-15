@@ -1,0 +1,92 @@
+/* Estilos Generales */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fce7f6;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.logo {
+  width: 200px;
+  position: relative;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 55vh;
+  height: 71vh;
+  position: absolute;
+  margin-left: 32.5rem;
+  top: 9rem;
+}
+
+h2 {
+  font-size: 32px;
+  color: #1c0c28;
+  margin-top: 5.5vh;
+  margin-left: 2rem;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  width: 43vh;
+  margin-left: 4vh;
+  margin-top: 3rem;
+}
+
+p {
+  color: #5a5a5a;
+  font-size: 15px;
+  margin-bottom: 15px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+button {
+  background-color: #ff0099;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 48vh;
+  margin-top: 22vh;
+  margin-left: 1.7rem;
+}
+
+button:hover {
+  background-color: #ff00999d;
+}
+
+.phone-input select,
+.phone-input input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  background-color: transparent;
+  appearance: none;
+}
+
+/*Propiedades del +57*/
+.phone-input select {
+  padding-right: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}

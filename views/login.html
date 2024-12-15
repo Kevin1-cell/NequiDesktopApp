@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>Inicio de Sesión - Nequi</title>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="Banco Logo" class="logo" />
+    </header>
+
+    <div class="container">
+      <div class="login-box">
+        <h2>Entra a tu Nequi</h2>
+        <p>Ingrese su número de telefono</p>
+        <div class="phone-input">
+          <img
+            src="../images/flag-co.svg"
+            alt="Bandera de Colombia"
+            class="flag"
+          />
+          <span class="code">+57</span>
+          <input type="text" id="phone" placeholder="Número de celular" />
+        </div>
+        <button id="login-btn">Entra</button>
+        <div id="error-message" style="display: none"></div>
+        <p id="register-link">
+          ¿No tienes una cuenta? <a href="./register.html">Crea una cuenta</a>
+        </p>
+      </div>
+    </div>
+    <script src="../js/auth.js"></script>
+  </body>
+</html>

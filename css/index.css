@@ -1,0 +1,74 @@
+/* Fondo general */
+body {
+  background-color: #1a001f; /* Fondo púrpura oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+/* Resto de la App */
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  position: inherit;
+}
+
+.logo {
+  width: 500px;
+  height: auto;
+  margin-bottom: 40px;
+  position: absolute;
+  left: 32rem;
+  top: 13rem;
+}
+
+/* Contenedor de los botones */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  position: absolute;
+  top: 28rem;
+  left: 37rem;
+  width: 25%;
+}
+
+/* Botones */
+button {
+  width: 100%;
+  padding: 16px; /*Para que vean altos*/
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.primary {
+  background-color: #ff007f;
+  color: white;
+  border: none;
+  margin-bottom: 11px;
+}
+
+button.primary:hover {
+  background-color: #e2599d;
+}
+
+button.secondary {
+  background-color: transparent;
+  color: white;
+}
+
+button.secondary:hover {
+  background-color: white;
+  color: #1a001f;
+}

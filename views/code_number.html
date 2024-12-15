@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/code_number.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="Banco Logo" class="logo" />
+    </header>
+
+    <!--2.2 Código Número Teléfonico -->
+    <section id="code-view" class="view">
+      <div class="card">
+        <h2>Escribe el código</h2>
+        <p>Te lo enviamos en un mensaje de texto al número ingresado...</p>
+        <div class="code-input">
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+        </div>
+        <p class="info">
+          ¿No te llegó?
+          <button id="send-email" class="link">
+            Enviar al correo electrónico
+          </button>
+        </p>
+        <div id="email-input" class="hidden">
+          <input type="email" id="email" placeholder="Escribe tu correo" />
+          <button id="submit-email">Enviar</button>
+        </div>
+        <div class="numeric-keypad">
+          <button class="key">1</button>
+          <button class="key">2</button>
+          <button class="key">3</button>
+          <button class="key">4</button>
+          <button class="key">5</button>
+          <button class="key">6</button>
+          <button class="key">7</button>
+          <button class="key">8</button>
+          <button class="key">9</button>
+          <button class="key">0</button>
+          <button class="key delete">&#8592;</button>
+        </div>
+        <button
+          id="verify-code"
+          onclick="window.location.href='./account_options.html'"
+        >
+          Aceptar
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

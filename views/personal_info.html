@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/personal_info.css" />
+    <title>Tu Información</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <!-- Columna Izquierda -->
+      <div class="box">
+        <h2>Tu info</h2>
+
+        <label for="primer-nombre">Tu nombre</label>
+        <input type="text" id="primer-nombre" placeholder="Primer nombre" />
+        <input type="text" placeholder="Segundo nombre (opcional)" />
+        <input type="text" placeholder="Primer apellido" />
+        <input type="text" placeholder="Segundo apellido (Opcional)" />
+
+        <label for="nombre-usuario">¿Cómo quieres que te llamemos?</label>
+        <input
+          type="text"
+          id="nombre-usuario"
+          placeholder="Nombre de usuari@ (Opcional)"
+        />
+
+        <label for="residencia">¿En dónde vives?</label>
+        <select id="residencia">
+          <option>COLOMBIA</option>
+          <option>MÉXICO</option>
+          <option>PERÚ</option>
+          <option>CHILE</option>
+        </select>
+      </div>
+
+      <!-- Columna Derecha -->
+      <div class="box">
+        <h2>Tu correo electrónico</h2>
+        <input type="email" placeholder="Escribe tu correo*" />
+        <input type="email" placeholder="Repite tu correo*" />
+
+        <p style="font-size: 14px; color: gray">
+          Te enviamos a tu correo el contrato de tu Nequi y la confirmación de
+          creación. Es super importante que pongas el correo que usas ahora, por
+          ahí nos comunicamos todo el tiempo.
+        </p>
+
+        <h2>Tu cédula de ciudadanía</h2>
+        <select>
+          <option>Tipo de documento</option>
+          <option>Cédula de ciudadanía</option>
+          <option>Tarjeta de identidad</option>
+          <option>Pasaporte</option>
+          <option>Cédula extranjera</option>
+        </select>
+        <input type="text" placeholder="Número de identificación" />
+        <input type="date" placeholder="Fecha de nacimiento" />
+
+        
+      </div>
+    </div>
+
+    <button
+          class="button"
+          onclick="window.location.href='./creat_password.html'"
+        >
+          Guardar
+        </button>
+
+  </body>
+</html>
