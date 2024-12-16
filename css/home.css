@@ -1,0 +1,187 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ede7f6;
+  color: #1f1b2d;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 3fr 1fr;
+  height: 100vh;
+  grid-template-areas:
+    "header header"
+    "main sidebar";
+}
+
+/* ---- Header ---- */
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 100px;
+}
+
+.header-center h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-right button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.block-btn {
+  background-color: #ff007a;
+  color: #fff;
+}
+
+.exit-btn {
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ---- Main Section ---- */
+main {
+  grid-area: main;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.balance-card {
+  background-color: #1f1b2d;
+  color: white;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  width: 250px;
+  height: 200px;
+}
+
+.balance-card .label {
+  font-size: 18px;
+}
+
+.balance-card .amount {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.balance-card .total {
+  font-size: 14px;
+}
+
+/* ---- Chat Box ---- */
+.nequi-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 350px;
+  border: 2px solid #000;
+}
+
+.chat-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoIA {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+/* Relleno negro dentro del chat */
+.chat-inner-box {
+  border: 2px solid #000; /* Borde negro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 5px; /* Espacio entre el borde y el contenido */
+  width: 100%; /* Abarca todo el ancho */
+  box-sizing: border-box; /* El borde y padding cuentan en el tamaño total */
+}
+
+.chat-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: white; /* Fondo blanco dentro del cuadro negro */
+  border-radius: 10px; /* Bordes redondeados para armonizar */
+  padding: 5px; /* Espacio interior */
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+}
+
+.send-btn {
+  background-color: #ff007a;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* ---- Sidebar ---- */
+.side-menu {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.side-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.side-item h3 {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.side-btn {
+  background-color: #ff007a;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

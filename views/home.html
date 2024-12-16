@@ -1,15 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
-  <title>Home - Nequi Web</title>
-</head>
-<body>
-  <div class="container">
-    <h1>¡Bienvenido a tu cuenta Nequi!</h1>
-    <p>Esta es la vista principal de tu cuenta.</p>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nequi Interface</title>
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Barra superior -->
+      <header>
+        <div class="header-left">
+          <img src="../images/logo.png" alt="Logo Nequi" class="logo" />
+        </div>
+        <div class="header-center">
+          <h2>Hola, Kevin Santiago!</h2>
+        </div>
+        <div class="header-right">
+          <button class="block-btn">Bloquear Nequi</button>
+          <button class="exit-btn" onclick="location.href = '../index.html'">Salir</button>
+
+        </div>
+      </header>
+
+      <!-- Contenido principal -->
+      <main>
+        <!-- Balance Card -->
+        <div class="balance-card">
+          <p class="label">Disponible</p>
+          <h2 class="amount">$ 0,00</h2>
+          <p class="total">Total $ 0,00</p>
+        </div>
+
+        <!-- Chat Card -->
+        <!-- Chat Card -->
+        <div class="nequi-card">
+          <div class="chat-content">
+            <div class="chat-inner-box">
+              <img src="../images/logo_IA.png" alt="IA Logo" class="logoIA" />
+              <div class="chat-box">
+                <textarea
+                  class="chat-input"
+                  placeholder="Pregúntale a Nequi..."
+                  rows="1"
+                ></textarea>
+                <button class="send-btn">
+                  <span>&rarr;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Barra lateral -->
+      <aside class="side-menu">
+        <div class="side-item">
+          <h3>Enviar</h3>
+          <button class="side-btn">&rarr;</button>
+        </div>
+        <div class="side-item">
+          <h3>Recargar</h3>
+          <button class="side-btn">&darr;</button>
+        </div>
+        <div class="side-item">
+          <h3>Transacciones</h3>
+          <button class="side-btn">&larr;</button>
+        </div>
+        <div class="side-item">
+          <h3>Configuración</h3>
+          <button class="side-btn">&uarr;</button>
+        </div>
+      </aside>
+    </div>
+  </body>
 </html>
